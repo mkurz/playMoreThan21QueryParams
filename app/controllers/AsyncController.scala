@@ -1,10 +1,11 @@
 package controllers
 
-import javax.inject.Singleton
-import play.api.mvc.{ Action, Controller }
+import javax.inject._
+import play.api._
+import play.api.mvc._
 
 @Singleton
-class AsyncController() extends Controller {
+class AsyncController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
   def moreThan21(one: Option[String],
                  two: Option[String],
