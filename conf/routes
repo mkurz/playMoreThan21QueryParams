@@ -2,13 +2,6 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# An example controller showing a sample home page
-GET     /                           controllers.HomeController.index
-# An example controller showing how to use dependency injection
-GET     /count                      controllers.CountController.count
-# An example controller showing how to write asynchronous code
-GET     /message                    controllers.AsyncController.message
-
 # Routes showing the more than 21 query params problem
 GET     /more_than_21               controllers.AsyncController.moreThan21(one: Option[String], two: Option[String], three: Option[String], four: Option[String], five: Option[String], six: Option[String], seven: Option[String], eight: Option[String], nine: Option[String], ten: Option[String], eleven: Option[String], twelve: Option[String], thirteen: Option[String], fourteen: Option[String], fifteen: Option[String], sixteen: Option[String], seventeen: Option[String], eighteen: Option[String], nineteen: Option[String], twenty: Option[String], twenty_one: Option[String], twenty_two: Option[String])
 
