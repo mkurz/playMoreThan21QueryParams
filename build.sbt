@@ -1,9 +1,7 @@
-name := """playMoreThan21QueryParams"""
+name := "playMoreThan21QueryParams"
 
 version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.11.12" // 7
-
-resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
+scalaVersion := "2.12.13"
