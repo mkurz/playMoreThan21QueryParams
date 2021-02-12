@@ -1,16 +1,10 @@
 package controllers
 
-import akka.actor.ActorSystem
-import javax.inject._
-import play.api._
-import play.api.mvc._
-import scala.concurrent.{ExecutionContext, Future, Promise}
-import scala.concurrent.duration._
+import javax.inject.Singleton
+import play.api.mvc.{ Action, Controller }
 
 @Singleton
-class AsyncController @Inject()(actorSystem: ActorSystem)(
-    implicit exec: ExecutionContext)
-    extends Controller {
+class AsyncController() extends Controller {
 
   def moreThan21(one: Option[String],
                  two: Option[String],
